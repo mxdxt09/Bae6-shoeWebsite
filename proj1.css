@@ -1,0 +1,720 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.mainPage {
+  width: 100%;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding-top: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .logo {
+  width: 40%;
+  padding-left: 60px;
+}
+.container .logo h1 span {
+  font-size: 64px;
+  color: #b2d3c4;
+  font-weight: 600;
+}
+.container .logo h1 {
+  font-size: 60px;
+  color: #333;
+  margin-bottom: 30px;
+}
+.container p {
+  font-size: 24px;
+  color: #333;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container .logo button {
+  width: 150px;
+  height: 50px;
+  color: #333;
+  background: #e1eeff;
+  border-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.container .logo button:hover {
+  letter-spacing: 1px;
+  transition: 0.3s;
+  font-weight: 700;
+  cursor: pointer;
+}
+.shoe-image {
+  width: 45%;
+}
+.shoe-image img {
+  width: 400px;
+  height: 300px;
+  transform: rotate(30deg);
+  background-position: center;
+}
+.shoe-image::before {
+  content: "";
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  background: #e1eeff;
+  border-radius: 50%;
+  transform: translateY(-10%);
+}
+.social-media .icons {
+  padding: 10px;
+  display: flex;
+}
+.icons ul {
+  display: block;
+}
+.icons ul li {
+  list-style: none;
+  padding: 20px;
+}
+.icons ul li:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  transform: translateX(-20%);
+}
+
+/* Second Page */
+header .head1 {
+  font-family: "Pacifico", cursive;
+  letter-spacing: -0.5px;
+  font-size: 44px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+header .head1 span {
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 30px;
+  color: rgb(94, 144, 190);
+}
+.second-page {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  background: url(/prjoectCard/images/bg3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.desc h1 {
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 10px;
+}
+.desc p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+.desc {
+  z-index: 9;
+  margin-top: 60px;
+  justify-content: center;
+}
+.desc button {
+  padding: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+  border: none;
+}
+.desc button:hover {
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+/* CARD 1 */
+.card1,
+.card2,
+.card3,
+.card4 {
+  display: flex;
+}
+.card1 {
+  padding-bottom: 40px;
+}
+.card1 .img1 {
+  display: flex;
+  z-index: 9;
+  width: 400px;
+}
+.card1 .img1 img {
+  box-shadow: 2px 2px 8px #888;
+}
+.card1 .descBack1 {
+  content: "";
+  width: 700px;
+  height: 200px;
+  position: absolute;
+  background: #ffb4973d;
+  transform: translate(35%, 15%);
+}
+.rectangle {
+  content: "";
+  width: 250px;
+  height: 350px;
+  position: absolute;
+  background: #ffb497;
+  transform: translate(10%, 5%);
+  border-radius: 10px;
+}
+
+/* card 2 */
+
+.card2 .desc {
+  padding-right: 60px;
+}
+.card2 .img2 {
+  z-index: 9;
+}
+.card2 .img2 img {
+  box-shadow: -2px -2px 8px #888;
+}
+.card2 .card2Rect {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 410px;
+  background: #8ab8f2;
+  transform: translate(182%, -5%);
+}
+.card2 .descBack2 {
+  content: "";
+  width: 700px;
+  height: 200px;
+  position: absolute;
+  background: #8ab9f257;
+  transform: translate(-5%, 20%);
+}
+.card2 .dottedBorder {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 410px;
+  border-style: dotted;
+  transform: translate(188%, 3%);
+  border-color: rgb(255, 217, 168);
+}
+.dottedBorder {
+  z-index: 12;
+}
+
+/* card 3 */
+.card3 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.card3 .img3 {
+  z-index: 12;
+  padding-right: 40px;
+}
+.card3 .descBack3 {
+  content: "";
+  width: 700px;
+  height: 200px;
+  position: absolute;
+  background: #00c4c43a;
+  transform: translate(35%, 15%);
+}
+.card3 .card3Rect {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 450px;
+  background: #00c4c4;
+  transform: translate(-6%, 5%);
+}
+.card3 .dotted3card {
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 450px;
+  border: solid;
+  border-color: rgb(109, 28, 28);
+  transform: translate(-4%, 2%);
+}
+
+/* card 4 */
+
+.card4 .img4 {
+  padding-left: 40px;
+  z-index: 12;
+}
+.card4 .img4 img {
+  box-shadow: 2px 2px 8px #333;
+}
+.card4 .card4Rect {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 400px;
+  background: #e7d294;
+  transform: translate(160%, -5%);
+  border-radius: 10px;
+}
+.card4 .descBack4 {
+  content: "";
+  width: 700px;
+  height: 200px;
+  position: absolute;
+  background: #e7d2944d;
+  transform: translate(-4%, 20%);
+}
+
+/* Section 3 */
+.container3 {
+  width: 100%;
+}
+.catZone {
+  width: 100%;
+  height: 87vh;
+  display: flex;
+  padding-top: 0px;
+}
+header h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 70px;
+  text-align: center;
+}
+header h1 span {
+  color: #6f767e;
+}
+.cat1,
+.cat2,
+.cat3,
+.cat4 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-around;
+}
+.cat1:hover,
+.cat2:hover,
+.cat3:hover,
+.cat4:hover {
+  background-attachment: fixed;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-2%);
+}
+.btn {
+  display: block;
+  margin-top: 550px;
+  text-align: center;
+}
+.btn button {
+  padding: 20px 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  border: solid;
+  border-color: #fff;
+  border-width: 4px;
+  border-radius: 10px;
+  background: transparent;
+}
+.btn button:hover {
+  cursor: pointer;
+  transition: 0.5s;
+  background: rgba(0, 0, 0, 0.363);
+  box-shadow: 2px 2px 5px #333;
+  transform: translateY(-10%);
+}
+
+.post {
+  width: 100%;
+  height: 80vh;
+  background: url(/prjoectCard/images/sneak.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.cat1 .post a button:hover {
+  background: rgba(255, 255, 255, 0.623);
+  box-shadow: 2px 5px rgba(255, 255, 255, 0.322);
+}
+.cat2 .post2 a button {
+  border-color: #333;
+  color: #333;
+}
+
+.post2 {
+  width: 100%;
+  height: 80vh;
+  background: url(/prjoectCard/images/sneakHead.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.post3 {
+  width: 100%;
+  height: 80vh;
+  background: url(/prjoectCard/images/sports.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.post4 {
+  width: 100%;
+  height: 80vh;
+  background: url(/prjoectCard/images/hightop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* section 4 */
+.new-launches {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: #d4f1f8;
+}
+.square {
+  content: "";
+  width: 500px;
+  height: 800px;
+  position: absolute;
+  background: #acd3e8;
+  transform: translate(10%, -20%);
+}
+.box {
+  display: flex;
+  padding: 50px;
+  margin: 200px auto;
+}
+.images-temp1 {
+  width: 300px;
+  height: 500px;
+  z-index: 9;
+}
+.images-temp1 img {
+  width: 300px;
+  height: 500px;
+}
+.images-temp2 img {
+  width: 300px;
+  height: 500px;
+  transform: translate(-40%, -20%);
+}
+.box .para {
+  margin: 15px auto;
+}
+.box .para h1 {
+  font-family: "Homemade Apple", cursive;
+  font-size: 70px;
+}
+.box .para p {
+  font-size: 25px;
+  font-family: "Homemade Apple", cursive;
+}
+/* container 5 */
+.myFav {
+  width: 100%;
+  height: 50vh;
+}
+.text {
+  display: flex;
+}
+.text .text1 {
+  padding-top: 65px;
+  transform: translate(28%);
+}
+.text .text1 span {
+  color: #db162f;
+}
+.text .text2 {
+  padding-top: 125px;
+  transform: translate(-60%);
+  z-index: 3;
+}
+.text .text2 span {
+  color: #f76150;
+}
+.text img {
+  width: 600px;
+  height: 400px;
+  z-index: 2;
+}
+.container5 .text {
+  text-align: center;
+  justify-content: center;
+  font-size: 50px;
+}
+/* conatiner 6 */
+.contactUs {
+  width: 100%;
+  height: 50vh;
+  background: url(/prjoectCard/images/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.container6 {
+  display: flex;
+  padding: 120px;
+}
+.details {
+  width: 50%;
+  display: block;
+}
+.details h4 {
+  font-size: 25px;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.details .txtarea {
+  color: #fff;
+  text-decoration: none;
+  width: 500px;
+}
+.details .sub-btn {
+  padding: 20px 55px;
+  border-radius: 10px;
+  color: #acd3e8;
+  font-size: 20px;
+  font-weight: 800;
+  background: #483d8b;
+}
+.container6 .us {
+  justify-content: flex-end;
+}
+.us {
+  margin: 20px auto;
+  font-size: 40px;
+  color: #d8bfd8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.us .us1 {
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 1250px) {
+  .container4 .box {
+    margin: 150px auto;
+  }
+  .continer4 .para {
+    margin: 0;
+  }
+
+  .btn button {
+    padding: 15px 25px;
+    font-size: 25px;
+  }
+  .container6 {
+    padding: 60px;
+  }
+}
+
+@media screen and (max-width: 1127px) {
+  .box {
+    padding: 0px;
+  }
+  .btn button {
+    padding: 15px 25px;
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container4 .box {
+    margin: 150px auto;
+  }
+  .box {
+    padding: 20px;
+  }
+  .container6 {
+    display: block;
+  }
+
+  /* from begining */
+  .container {
+    display: block;
+    width: 100%;
+    padding-top: 0;
+    text-align: center;
+    padding-left: 0px;
+  }
+  .container .logo {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .shoe-image {
+    width: 100%;
+    transform: translate(3%, 40%);
+  }
+  .social-media .icons {
+    padding: 10px;
+    display: block;
+  }
+  .icons ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 250px;
+  }
+  .icons ul li:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    transform: translateY(-20%);
+  }
+
+  .rectangle,
+  .card2Rect,
+  .dottedBorder,
+  .card3Rect,
+  .card4Rect,
+  .dotted3card,
+  .descBack1,
+  .descBack2,
+  .descBack3,
+  .descBack4 {
+    display: none;
+  }
+
+  .card1 .img1 {
+    width: 300px;
+  }
+  .desc {
+    width: 60%;
+    height: 70%;
+    padding: 20px;
+    background: #ffffff3d;
+  }
+  .square {
+    width: 400px;
+    height: 500px;
+    transform: translate(-5%, -20%);
+  }
+  .images-temp1 img {
+    width: 200px;
+    height: 350px;
+  }
+  .images-temp2 img {
+    width: 200px;
+    height: 300px;
+    transform: translate(-50%, -20%);
+  }
+  .box .para h1 {
+    font-size: 50px;
+  }
+  .box .para p {
+    font-size: 20px;
+  }
+  .details .sub-btn {
+    padding: 10px 35px;
+  }
+  .us {
+    font-size: 30px;
+  }
+
+  .post {
+    height: 40vh;
+  }
+  .post2 {
+    height: 40vh;
+  }
+  .post3 {
+    height: 40vh;
+  }
+  .post4 {
+    height: 40vh;
+  }
+  .catZone {
+    height: auto;
+  }
+
+  .btn {
+    margin-top: 250px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container4 .box {
+    margin: 100px auto;
+  }
+  .btn button {
+    padding: 5px 15px;
+  }
+  .text .text1 {
+    padding-top: 45px;
+    transform: translate(78%);
+    z-index: 2;
+  }
+  .text img {
+    z-index: 0;
+    opacity: 0.5;
+  }
+  .text .text2 {
+    transform: translate(-125%);
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .catZone {
+    height: auto;
+    display: block;
+  }
+  .post {
+    width: 95%;
+  }
+  .post2 {
+    width: 95%;
+  }
+  .post3 {
+    width: 95%;
+  }
+  .post4 {
+    width: 95%;
+  }
+  .square {
+    width: 300px;
+    height: 300px;
+  }
+  .images-temp1 {
+    z-index: 999;
+  }
+  .images-temp1 img {
+    width: 150px;
+    height: 250px;
+    transform: translate(-10%);
+    z-index: 999;
+  }
+  .images-temp2 img {
+    width: 150px;
+    height: 250px;
+    transform: translate(50%, -220%);
+  }
+  .box {
+    display: block;
+    height: 600px;
+  }
+  .box .para {
+    margin: 15px auto;
+    transform: translate(-0px, -140%);
+  }
+}
